@@ -1,10 +1,10 @@
 // 1. Дан список тегов  ['li', 'div', 'li', 'p', 'h1', 'p', 'h1', 'div', 'div', 'li', 'h1',  'p', 'h1', 'ol’, ‘br’]. Вам нужно посчитать каких тегов сколько штук.  Обязательное условие:
 //   - Конечный результат должен вывестись как объект {}, где ключ - это сам тег, а значение - это количество сколько раз этот тег встречается в массиве.
 
-let tags = ['li', 'div', 'li', 'p', 'h1', 'p', 'h1', 'div', 'div', 'li', 'h1', 'p', 'h1', 'ol', 'br']
-let countTags = {}
+var tags = ['li', 'div', 'li', 'p', 'h1', 'p', 'h1', 'div', 'div', 'li', 'h1', 'p', 'h1', 'ol', 'br']
+var countTags = {}
 
-for(let tag of tags) {
+for(var tag of tags) {
     countTags[tag] = (countTags[tag] || 0) + 1
 }
 console.log(countTags)
