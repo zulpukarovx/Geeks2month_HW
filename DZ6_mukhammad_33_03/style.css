@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    padding-top: 60px;
+    text-align: center;
+}
+li {
+    list-style: none;
+    line-height: 130%;
+    border: 1px solid #ffa500;
+    margin: 10px;
+    padding: 7px;
+    border-radius: 7px;
+}
+#month {
+    margin: 15px 5px;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+.result-box {
+    padding-top: 20px;
+    padding-right: 35px;
+    text-align: left;
+}
+#calculate-btn {
+    padding: 7px 16px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    background-color: #ffa500;
+    transition: 0.3s;
+}
+#calculate-btn:hover {
+    transform: scale(1.1);
+}
+#amount-input {
+    text-align: center;
+    height: 25px;
+    width: 140px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 300;
+}

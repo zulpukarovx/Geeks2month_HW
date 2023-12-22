@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Расчет бюджета</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-side">
+            <input id="amount-input" type="number" placeholder="Введите сумму">
+            <div>
+                <label>
+                    Выберите месяц:
+                    <select id="month">
+                        <option value="пустой">---</option>
+                        <option value="январь">Январь</option>
+                        <option value="февраль">Февраль</option>
+                        <option value="март">Март</option>
+                        <option value="апрель">Апрель</option>
+                        <option value="май">Май</option>
+                        <option value="июнь">Июнь</option>
+                        <option value="июль">Июль</option>
+                        <option value="август">Август</option>
+                        <option value="сентябрь">Сентябрь</option>
+                        <option value="октябрь">Октябрь</option>
+                        <option value="ноябрь">Ноябрь</option>
+                        <option value="декабрь">Декабрь</option>
+                    </select>
+                </label>
+            </div>
+            <button id="calculate-btn">Расчет бюджета</button>
+        </div>
+        <div class="result-box" id="result">
+            <ul id="ul-el"></ul>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
