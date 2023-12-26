@@ -1,13 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const toggleButtons = document.querySelectorAll('.toggle-btn');
+const toggleButtons = document.querySelectorAll('.toggle-btn');
 
-    toggleButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const answer = this.nextElementSibling;
-            const isAnswerVisible = answer.style.display !== 'none';
+toggleButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const answer = this.nextElementSibling
 
-            answer.style.display = isAnswerVisible ? 'none' : 'block';
-            this.textContent = isAnswerVisible ? 'Показать ответ' : 'Скрыть ответ';
-        });
-    });
-});
+        const isVisible = answer.classList.toggle('visible')
+
+        this.textContent = answer.classList.contains('visible') ? 'Скрыть ответ' : 'Показать ответ';
+    })
+})
